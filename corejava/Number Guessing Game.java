@@ -17,7 +17,7 @@ public class NumberGuessingGame {
             if (guess < target) {
                 System.out.println("Too low. Aim higher");
             } else if (guess > target) {
-                System.out.println("Too high, darling. Try lower");
+                System.out.println("Too high. Try lower");
             } else {
                 System.out.println("You got it! The number was " + target + ". You're amazing!");
             }
