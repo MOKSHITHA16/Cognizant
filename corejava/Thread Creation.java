@@ -9,7 +9,7 @@ class MyThread implements Runnable {
         for (int i = 1; i <= 5; i++) {
             System.out.println(message + " - Count: " + i);
             try {
-                Thread.sleep(500); // Add a little delay so you can see the interleaving
+                Thread.sleep(500); 
             } catch (InterruptedException e) {
                 System.out.println("Thread interrupted.");
             }
