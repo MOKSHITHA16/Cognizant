@@ -4,7 +4,7 @@ import java.util.Random;
 public class NumberGuessingGame {
     public static void main(String[] args) {
         Random rand = new Random();
-        int target = rand.nextInt(100) + 1;  // 1 to 100
+        int target = rand.nextInt(100) + 1;
         Scanner s = new Scanner(System.in);
         int guess = 0;
 
@@ -15,11 +15,11 @@ public class NumberGuessingGame {
             guess = s.nextInt();
 
             if (guess < target) {
-                System.out.println("Too low, babe. Aim higher 🔥");
+                System.out.println("Too low. Aim higher");
             } else if (guess > target) {
-                System.out.println("Too high, darling. Try lower 😉");
+                System.out.println("Too high, darling. Try lower");
             } else {
-                System.out.println("You got it! The number was " + target + ". You're amazing! 🎉");
+                System.out.println("You got it! The number was " + target + ". You're amazing!");
             }
         }
 
